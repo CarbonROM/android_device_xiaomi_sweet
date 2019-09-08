@@ -19,12 +19,20 @@
 
 #ifndef _BDROID_BUILDCFG_H
 #define _BDROID_BUILDCFG_H
-#include <cutils/properties.h>
+//#include <cutils/properties.h>
 #include <string.h>
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+int property_get(const char *key, char *value, const char *default_value);
+#ifdef __cplusplus
+}
+#endif
 
 inline const char* BtmGetDefaultName()
 {
-	char device[PROPERTY_VALUE_MAX];
+	char device[92];
 	property_get("ro.product.model", device, "");
 
 	if (!strcmp("M2101K6I", device)) {
