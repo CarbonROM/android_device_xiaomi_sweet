@@ -104,7 +104,8 @@ DEVICE_PACKAGE_OVERLAYS += \
 # rro_overlays
 PRODUCT_PACKAGES += \
     WifiOverlay \
-    SystemUIOverlaySweet
+    SystemUIOverlaySweet \
+    FrameworksOverlaySweet
 
 # Overlays -- Override vendor ones
 PRODUCT_PACKAGES += \
