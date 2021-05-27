@@ -24,6 +24,7 @@ import android.os.UserHandle;
 import androidx.preference.PreferenceManager;
 
 import org.lineageos.settings.utils.FileUtils;
+import org.lineageos.settings.utils.RefreshRateUtils;
 
 public final class ThermalUtils {
 
@@ -55,12 +56,14 @@ public final class ThermalUtils {
     private static final String THERMAL_SCONFIG = "/sys/class/thermal/thermal_message/sconfig";
 
     private SharedPreferences mSharedPrefs;
+    private static Context mContext;
 
     protected ThermalUtils(Context context) {
         mSharedPrefs = PreferenceManager.getDefaultSharedPreferences(context);
     }
 
     public static void startService(Context context) {
+        mContext = context;
         context.startServiceAsUser(new Intent(context, ThermalService.class),
                 UserHandle.CURRENT);
     }
@@ -136,12 +139,15 @@ public final class ThermalUtils {
 
     protected void setDefaultThermalProfile() {
         FileUtils.writeLine(THERMAL_SCONFIG, THERMAL_STATE_DEFAULT);
+        RefreshRateUtils.setFPS(RefreshRateUtils.getRefreshRate(mContext)); // default Hz
     }
 
     protected void setThermalProfile(String packageName) {
         String value = getValue();
         String modes[];
         String state = THERMAL_STATE_DEFAULT;
+
+        RefreshRateUtils.setFPS(RefreshRateUtils.getRefreshRate(mContext)); // default Hz
 
         if (value != null) {
             modes = value.split(":");
@@ -158,6 +164,7 @@ public final class ThermalUtils {
                 state = THERMAL_STATE_GAMING;
             } else if (modes[5].contains(packageName + ",")) {
                 state = THERMAL_STATE_VIDEO_PLAYER;
+                RefreshRateUtils.setFPS(0); // 60Hz
             }
         }
         FileUtils.writeLine(THERMAL_SCONFIG, state);
