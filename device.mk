@@ -106,7 +106,9 @@ DEVICE_PACKAGE_OVERLAYS += \
 PRODUCT_PACKAGES += \
     WifiOverlay \
     SystemUIOverlaySweet \
-    FrameworksOverlaySweet
+    FrameworksOverlaySweet \
+    SweetinproSettingsProvider \
+    SweetinproWifiOverlay
 
 # Overlays -- Override vendor ones
 PRODUCT_PACKAGES += \
