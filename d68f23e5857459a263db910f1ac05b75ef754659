@@ -1,4 +1,22 @@
 {
   "pushCert": "certificate version 0.1\npusher Christian Oder \u003cmyself5@carbonrom.org\u003e 1627651925 +0200\npushee ssh://review.carbonrom.org:29418/CarbonROM/android_device_xiaomi_sweet\nnonce 1627651925-5F5F526A709ABCCF523465E79C738C0B7B1F38D4\n\n0000000000000000000000000000000000000000 d68f23e5857459a263db910f1ac05b75ef754659 refs/for/cr-9.0\n-----BEGIN PGP SIGNATURE-----\n\niQJKBAABCAA0FiEEAeKysoG6T9uCVbCUU4O8v8DvjyIFAmED/1UWHG15c2VsZjVA\nY2FyYm9ucm9tLm9yZwAKCRBTg7y/wO+PIk4oD/9zdfq0dSpsKVZC3x46FzFJyxP6\nojFgvsvgz+fzxbeFV1rMV9cTi9D1rTPJcfw9SSyliwJg0WWkyCKMiPu+RcODKnzb\n7N++Ep1TfvdiozP/eFX6Zo0BazNQFT4dRagJLJQweU0Hug5ynRx5ET2ZVKpQvuiI\nyoWThPP3ZAfoF5SNJD37pH0kr0SNyntzLhl0yZbMYMbmeb4QyC1wtJyb5yPNqBM8\ncvHjVNkMod1ZAH6ijW420ZpJ45nAXufmhh3xInvXM8gPECHWiuRyD++4MZDs7LQS\n1UURRn61Ia7K6zxPbAq5aPKQeoxgaKv5cFkF1lPXGCW+IYz2qiF4geo+QR5qob8p\nGAQjzNZTnhUYQNvAANtX66Hbcd0bVXweQyQmJhIUNkd7nqPclssfK1ANFFKXunCo\nUmuqIjJCwAzQGgEf/BKrBLOB1FNMdG+nrnuaieqSDkdUJPZGgg1GFNqNaHFgckos\ndgjdiR1o6RYH7JESFjxydxMM/7TzCgeA1gUKQfqL+Sx9zGBlwn/vpwkyjf29s717\nqrg+BadrlaxEHidKb2zi/ok4eB9Wn62vWwDFo2mMWvKsLnmBhMJtSbYHCUXGSP2Q\njtz/D2limPf1djTpd4Yxga8CqzxzeWrX1kP4qshPgAZaYu0BKqB1dnd+2Qng/S22\naT0CGaYVyH7DSH+ATw\u003d\u003d\n\u003dwTzq\n-----END PGP SIGNATURE-----\n",
-  "comments": []
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3c2a9dd6_6f6a750c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2021-07-30T13:33:37Z",
+      "side": 1,
+      "message": "Fixes crashing the builds of other devices to to double definitions of various packages.\n\nThe device specific makefiles should only be included when building that device.",
+      "revId": "d68f23e5857459a263db910f1ac05b75ef754659",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081"
+    }
+  ]
 }
