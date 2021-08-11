@@ -18,4 +18,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.surface_flinger.supports_background_blur=1 \
     persist.sys.sf.disable_blurs=1 \
-    ro.sf.blurs_are_expensive=1  
+    ro.sf.blurs_are_expensive=1
+
+# Crypto
+PRODUCT_SYSTEM_PROPERTIES += \
+    ro.crypto.dm_default_key.options_format.version=2 \
+    ro.crypto.volume.filenames_mode=aes-256-cts \
+    ro.crypto.volume.metadata.method=dm-default-key \
+    ro.crypto.volume.options=::v2
