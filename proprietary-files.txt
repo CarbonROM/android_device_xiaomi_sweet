@@ -1,5 +1,8 @@
 # All unpinned blobs are extracted from Redmi/sweet_eea/sweet:11/RKQ1.200826.002/V12.5.2.0.RKFEUXM:user/release-keys
 
+# Alarm
+-product/app/PowerOffAlarm/PowerOffAlarm.apk
+
 # Camera
 system/lib/libcameraservice.so
 system_ext/lib/vendor.qti.hardware.camera.device@1.0.so
