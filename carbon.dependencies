@@ -2,6 +2,11 @@
   {
     "repository": "CarbonROM/android_kernel_xiaomi_sweet",
     "target_path": "kernel/xiaomi/sweet"
+  },
+  {
+    "repository": "LineageOS/android_packages_resources_devicesettings",
+    "target_path": "packages/resources/devicesettings",
+    "revision": "lineage-18.1"
   }
 ]
 

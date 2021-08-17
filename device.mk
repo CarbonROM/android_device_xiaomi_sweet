@@ -54,7 +54,9 @@ PRODUCT_PACKAGES += \
     XiaomiDoze
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/parts/privapp-permissions-parts.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-parts.xml
+    $(LOCAL_PATH)/parts/privapp-permissions-parts.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-parts.xml \
+    $(LOCAL_PATH)/doze/privapp-permissions-doze.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-doze.xml
+
 
 # Display
 PRODUCT_COPY_FILES += \
