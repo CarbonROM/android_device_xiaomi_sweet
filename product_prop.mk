@@ -22,8 +22,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # LMKD
 PRODUCT_PRODUCT_PROPERTIES += \
-    ro.config.low_ram=false \
-    ro.lmk.log_stats=true
+    ro.config.low_ram=false
 
 # Audio
 PRODUCT_PRODUCT_PROPERTIES += \
