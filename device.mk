@@ -25,6 +25,9 @@ PRODUCT_TARGET_VNDK_VERSION := 30
 # A/B
 AB_OTA_UPDATER := false
 
+# Enable stats logging in LMKD
+TARGET_LMKD_STATS_LOG := true
+
 # Audio
 PRODUCT_PACKAGES += \
     audio.a2dp.default \
