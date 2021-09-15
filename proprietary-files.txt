@@ -1,4 +1,4 @@
-# All unpinned blobs are extracted from Redmi/sweet_eea/sweet:11/RKQ1.200826.002/V12.5.2.0.RKFEUXM:user/release-keys
+# All unpinned blobs are extracted from Redmi/sweet_eea/sweet:11/RKQ1.200826.002/V12.5.4.0.RKFEUXM:user/release-keys
 
 # Alarm
 -product/app/PowerOffAlarm/PowerOffAlarm.apk
