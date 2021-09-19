@@ -128,11 +128,14 @@ system_ext/framework/qcrilhook.jar
 -system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 
 # Soundfx - from LA.UM.8.9.r1-08400-SM6xx.0
-vendor/lib/soundfx/libvolumelistener.so:product/vendor_overlay/30/lib/soundfx/libvolumelistener.so:|672ad577dab5221bdd7f840d87313e3483aebde0
+vendor/lib/soundfx/libvolumelistener.so:product/vendor_overlay/30/lib/soundfx/libvolumelistener.so|672ad577dab5221bdd7f840d87313e3483aebde0
 vendor/lib64/soundfx/libvolumelistener.so:product/vendor_overlay/30/lib64/soundfx/libvolumelistener.so|c25cc5e8c3622eb97d3bb4814aeb301c01d8b046
 
 # Telephony
 system_ext/framework/qti-telephony-common.jar|bfa766915a0e2b25de395e907e6ec389309c5122
+
+# VINTF fragments
+vendor/etc/vintf/manifest.xml:product/vendor_overlay/30/etc/vintf/manifest.xml:6451e8f5ca9fad2961c172ab514d4cf5885181ed
 
 # WiFi Display
 -framework/WfdCommon.jar
