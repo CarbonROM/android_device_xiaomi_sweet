@@ -112,6 +112,9 @@ system_ext/lib/vendor.qti.hardware.iop@2.0.so
 # Power-off charging daemon
 bin/charger
 
+# Power Service
+vendor/bin/hw/android.hardware.power-service:product/vendor_overlay/30/bin/hw/android.hardware.power-service|a3ae6361efdbc6669e2f5a84c36aac1ef1f1367c
+
 # RIL
 system_ext/etc/permissions/qti_libpermissions.xml
 system_ext/etc/permissions/qti_permissions.xml
