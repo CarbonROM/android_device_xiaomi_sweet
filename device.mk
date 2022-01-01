@@ -51,11 +51,9 @@ PRODUCT_PACKAGES += \
 
 # Device Settings
 PRODUCT_PACKAGES += \
-    XiaomiParts \
-    CutoutRingServiceSweet \
-    XiaomiDoze
+    CutoutRingServiceSweet
 
-PRODUCT_COPY_FILES += \
+#PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/parts/privapp-permissions-parts.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-parts.xml \
     $(LOCAL_PATH)/doze/privapp-permissions-doze.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-doze.xml
 
@@ -84,11 +82,11 @@ PRODUCT_PACKAGES += \
     android.hidl.manager@1.0
 
 # IFAA manager
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
     IFAAService \
     org.ifaa.android.manager
 
-PRODUCT_BOOT_JARS += \
+#PRODUCT_BOOT_JARS += \
     org.ifaa.android.manager
 
 # Init
@@ -101,7 +99,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/keylayout/sm6150-idp-snd-card_Button_Jack.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/sm6150-idp-snd-card_Button_Jack.kl
 
 # Lights
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
     android.hardware.lights-service.qti-sweet
 
 # NFC
@@ -139,7 +137,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.perf@2.0
 
 # Power
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
     android.hardware.power-service.sweet
 
 # Recovery
@@ -167,7 +165,7 @@ PRODUCT_PACKAGES += \
     qti_telephony_utils.xml \
     telephony-ext
 
-PRODUCT_BOOT_JARS += \
+#PRODUCT_BOOT_JARS += \
     telephony-ext
 
 # WiFi
@@ -183,7 +181,7 @@ PRODUCT_PACKAGES += \
     libavservices_minijail_32 \
     vendor.display.config@2.0
 
-PRODUCT_BOOT_JARS += \
+#PRODUCT_BOOT_JARS += \
     WfdCommon
 
 # Soong namespaces
