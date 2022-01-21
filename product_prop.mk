@@ -32,6 +32,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	ro.config.vc_call_vol_default=7 \
 	ro.config.vc_call_vol_steps=11
 
+# One hand mode
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.support_one_handed_mode=true
+
 # RIL
 PRODUCT_PROPERTY_OVERRIDES += \
 	persist.dbg.volte_avail_ovr=1 \
