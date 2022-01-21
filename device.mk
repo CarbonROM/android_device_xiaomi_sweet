@@ -138,7 +138,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.perf@2.0
 
 # Power
-#PRODUCT_PACKAGES += \
+PRODUCT_PACKAGES += \
     android.hardware.power-service.sweet
 
 # Recovery
