@@ -11,12 +11,8 @@
      limitations under the License.
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    android:compileSdkVersion="30"
-    package="xiaomi.sweet.systemui.overlay"
-    platformBuildVersionCode="30">
-    <application android:extractNativeLibs="false"/>
-    <overlay
-        android:isStatic="true"
-        android:priority="10"
-        android:targetPackage="com.android.systemui"/>
+    package="xiaomi.sweet.systemui.overlay">
+    <application android:hasCode="false" />
+    <overlay android:isStatic="true" android:priority="10"
+	android:targetPackage="com.android.systemui"/>
 </manifest>
