@@ -24,11 +24,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.display.disable_metadata_dynamic_fps=1
 
 
-# LMKD
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.config.low_ram=false \
-    ro.lmk.log_stats=true
-
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.config.media_vol_default=10 \
