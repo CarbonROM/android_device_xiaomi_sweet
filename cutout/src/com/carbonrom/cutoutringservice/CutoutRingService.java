@@ -62,7 +62,7 @@ public class CutoutRingService extends BroadcastReceiver {
     private static final int SHOWN_SMALL = 1;
     private static final int SHOWN = 2;
 
-    private static final float SCALE_CAMERA_INACTIVE = 0.8f;
+    private static final float SCALE_CAMERA_INACTIVE = 0.0f;
 
     private final WindowManager.LayoutParams mRingParams = new WindowManager.LayoutParams(
             WindowManager.LayoutParams.TYPE_SECURE_SYSTEM_OVERLAY,
